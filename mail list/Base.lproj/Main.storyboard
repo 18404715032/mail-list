@@ -46,7 +46,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ia-yr-hj3">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="74" y="149" width="45" height="21"/>
@@ -65,7 +65,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HQ-Zf-mAd">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="74" y="219" width="45" height="21"/>
@@ -74,7 +74,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-cA-rLJ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="74" y="289" width="45" height="21"/>
@@ -99,7 +99,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2g-gO-2f0">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="74" y="64" width="45" height="21"/>
@@ -139,21 +139,25 @@
                     <connections>
                         <outlet property="txtMobile" destination="Stt-fi-PiO" id="e9b-jC-HwH"/>
                         <outlet property="txtUname" destination="Img-eX-j8s" id="vkI-BY-JQQ"/>
+                        <outlet property="txtemail" destination="hiH-io-FOf" id="wRN-ex-M7k"/>
+                        <outlet property="txtqq" destination="5lb-hY-ae1" id="PVg-DE-vlf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="478.5" y="-62"/>
         </scene>
-        <!--View Controller-->
+        <!--Kan-->
         <scene sceneID="NWy-Ny-WQx">
             <objects>
-                <viewController id="G6c-og-eeC" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKt-7d-Yua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="G6c-og-eeC" customClass="kan" customModule="mail_list" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9XW-cn-Iaw"/>
                         <viewControllerLayoutGuide type="bottom" id="1MY-eQ-hPR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="57G-1B-8am">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-W5-5cQ">
@@ -166,42 +170,60 @@
                                     <segue destination="kGD-Qu-0nE" kind="modal" id="edA-Q8-rcb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-gY-ZJC">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="查询"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mpe-ay-5rS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="185" y="350" width="30" height="30"/>
+                                    <rect key="frame" x="81" y="110" width="239" height="246"/>
                                 </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tz-xL-F8F">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="查看"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="185" y="28" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="k:" destination="G6c-og-eeC" eventType="touchUpInside" id="CtI-qe-9nB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="TMz-W5-5cQ"/>
-                                <exclude reference="9fm-gY-ZJC"/>
+                                <exclude reference="mpe-ay-5rS"/>
+                                <exclude reference="2Tz-xL-F8F"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="TMz-W5-5cQ"/>
-                                <include reference="9fm-gY-ZJC"/>
+                                <include reference="mpe-ay-5rS"/>
+                                <include reference="2Tz-xL-F8F"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="y" destination="mpe-ay-5rS" id="AoV-kQ-DdH"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EKt-7d-Yua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1144.5" y="118"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="87J-mM-Or1">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euh-8G-WEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="kGD-Qu-0nE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wsy-a5-qbK"/>
                         <viewControllerLayoutGuide type="bottom" id="dnR-da-Ad3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ABh-C9-MtV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aC8-lw-Rbd">
@@ -226,7 +248,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0B-uw-cmN">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="查找联系人"/>
+                                <state key="normal" title="查看联系人"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="163" y="156" width="75" height="30"/>
                                 </variation>
@@ -252,19 +274,20 @@
                         </variation>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="euh-8G-WEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-373.5" y="78"/>
         </scene>
-        <!--View Controller-->
+        <!--Delete-->
         <scene sceneID="Fm3-it-4Wg">
             <objects>
-                <viewController id="hzX-W5-BzM" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryY-gL-5Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hzX-W5-BzM" customClass="delete" customModule="mail_list" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q88-g8-iIw"/>
                         <viewControllerLayoutGuide type="bottom" id="6ab-cK-HJ9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xuA-we-p02">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhN-Wn-aBn">
@@ -273,6 +296,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="185" y="318" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="deleee:" destination="hzX-W5-BzM" eventType="touchUpInside" id="zaQ-te-LQS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5B-DW-22A">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -284,29 +310,41 @@
                                     <segue destination="kGD-Qu-0nE" kind="modal" id="nan-7t-AAE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入需要删除联系人的姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqS-Ld-UxG">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="101" width="212" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="zhN-Wn-aBn"/>
                                 <exclude reference="d5B-DW-22A"/>
+                                <exclude reference="tqS-Ld-UxG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="zhN-Wn-aBn"/>
                                 <include reference="d5B-DW-22A"/>
+                                <include reference="tqS-Ld-UxG"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="name1" destination="tqS-Ld-UxG" id="x1m-wm-1Mf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ryY-gL-5Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-112.5" y="772"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hmh-pN-w6Q"/>
+        <segue reference="nan-7t-AAE"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
