@@ -10,10 +10,14 @@ import UIKit
 
 class kan: UIViewController {
     
+    @IBOutlet weak var h: UITextView!
     
     
     @IBOutlet weak var y: UITextView!
     
+    @IBAction func sele(sender: AnyObject) {
+        sel()
+    }
     var db:SQLiteDB!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,18 @@ class kan: UIViewController {
             let u = date[i]
             y.text! += "\(i)"
             y.text! += "\n"+"姓名:"+String(u["uname"]!)+"\n"+"电话:"+String(u["mobile"]!)+"\n"+"邮箱"+String(u["email"]!)+"\n"+"QQ" + String(u["qq"]!) + "\n"
+        }
+    }
+    func sel(){
+        //h.text!=""
+        let value = h.text!
+        //h.text!=""
+        let data = db.query("select * from user where uname='\(value)' ")
+        for var x=0 ; x<data.count; x++
+        {
+            let u = data[x]
+           // h.text! += "\n" + "姓名:" + String(u["uname"]!) + "\n" + "电话:" + String(u["mobile"]!)+"\n" + "邮箱" + String(u["email"]!) + "\n" + "QQ" + String(u["qq"]!) + "\n"
+            h.text! += "\n"+"姓名:"+String(u["uname"]!)+"\n"+"电话:"+String(u["mobile"]!)+"\n"+"邮箱"+String(u["email"]!)+"\n"+"QQ" + String(u["qq"]!) + "\n"
         }
     }
 

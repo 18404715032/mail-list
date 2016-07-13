@@ -20,7 +20,12 @@ class delete: UIViewController {
     }
     
     @IBAction func deleee(sender:AnyObject){
-        del()
+        var alert = UIAlertView(title: "提示", message: "联系人已删除", delegate: self, cancelButtonTitle: "确定")
+        alert.alertViewStyle = UIAlertViewStyle.Default
+        
+        alert.show()
+            del()
+        
     }
     func del(){
         let a=name1.text!

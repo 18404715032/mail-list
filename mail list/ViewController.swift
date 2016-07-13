@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     
     //点击保存
     @IBAction func saveClicked(sender: AnyObject) {
+        var alert = UIAlertView(title: "提示", message: "已保存联系人", delegate: self, cancelButtonTitle: "确定")
+        alert.alertViewStyle = UIAlertViewStyle.Default
+        
+        alert.show()
         saveUser()
     }
     

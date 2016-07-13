@@ -14,6 +14,7 @@
 		847A0B3E1D2A10F200437AE3 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A0B3B1D2A10F200437AE3 /* String-Extras.swift */; };
 		847A0B401D2A10F700437AE3 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 847A0B3F1D2A10F700437AE3 /* data.db */; };
 		8481E03B1D28B99C00E84556 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8481E03A1D28B99C00E84556 /* libsqlite3.0.tbd */; };
+		84CCA5DA1D338D6A00901394 /* chazhao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCA5D91D338D6A00901394 /* chazhao.swift */; };
 		84E799641D264EF900407B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E799631D264EF900407B67 /* AppDelegate.swift */; };
 		84E799661D264EF900407B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E799651D264EF900407B67 /* ViewController.swift */; };
 		84E799691D264EF900407B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E799671D264EF900407B67 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		847A0B3F1D2A10F700437AE3 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
 		8481E0391D28B8BC00E84556 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		8481E03A1D28B99C00E84556 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		84CCA5D91D338D6A00901394 /* chazhao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chazhao.swift; sourceTree = "<group>"; };
 		84E799601D264EF900407B67 /* mail list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mail list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E799631D264EF900407B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E799651D264EF900407B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				8481E0391D28B8BC00E84556 /* Header.h */,
 				842D3BDA1D2C923100A18803 /* delete.swift */,
 				842D3BDC1D2CABD900A18803 /* kan.swift */,
+				84CCA5D91D338D6A00901394 /* chazhao.swift */,
 			);
 			path = "mail list";
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				842D3BDD1D2CABD900A18803 /* kan.swift in Sources */,
 				84E799661D264EF900407B67 /* ViewController.swift in Sources */,
 				842D3BDB1D2C923100A18803 /* delete.swift in Sources */,
+				84CCA5DA1D338D6A00901394 /* chazhao.swift in Sources */,
 				84E799641D264EF900407B67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
